@@ -5,7 +5,7 @@
 
 ///
 .display-flex {
-	display: flex;
+	@extend %display-flex;
 }
 
 ///
@@ -19,17 +19,21 @@
 
 	&-direction {
 		&-column {
+			@extend %display-flex;
 			flex-direction: column;
 
 			&-reverse {
+				@extend %display-flex;
 				flex-direction: column-reverse;
 			}
 		}
 
 		&-row {
+			@extend %display-flex;
 			flex-direction: row;
 
 			&-reverse {
+				@extend %display-flex;
 				flex-direction: row-reverse;
 			}
 		}
